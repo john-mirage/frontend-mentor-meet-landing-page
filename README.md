@@ -1,9 +1,12 @@
-# Template repository for Vite, React and Stitches
+# Frontend Mentor - Meet landing page solution
 
-## Features
+![project screenshot](/public/preview.jpg)
 
-- Types with Typescript
-- Javascript linting with Eslint
-- Code Formatting with Prettier
-- Unit testing with Vitest
-- Integration testing with React testing library
+This is a solution to the [Meet landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout depending on their device's screen size
+- See hover states for interactive elements
