@@ -15,7 +15,7 @@ const Hero = () => {
         </Styled.Subtitle>
         <Styled.ButtonGroup>
           <Styled.DownloadButton type="button" color="teal">
-            Download v1.3
+            Download <Styled.Version>v1.3</Styled.Version>
           </Styled.DownloadButton>
           <Styled.AboutButton type="button" color="violet">
             What is it?

@@ -1,7 +1,6 @@
 import { styled } from "@styles/stitches.config";
 
 export const Button = styled("button", {
-  padding: "$16 $40",
   borderRadius: "9999px",
   fontSize: "$16",
   fontWeight: 900,
@@ -11,6 +10,7 @@ export const Button = styled("button", {
   variants: {
     color: {
       teal: {
+        "padding": "$16 $40",
         "backgroundColor": "$teal",
         "@hover": {
           "&:hover": {
@@ -19,6 +19,7 @@ export const Button = styled("button", {
         },
       },
       violet: {
+        "padding": "$16 $30",
         "backgroundColor": "$violet",
         "@hover": {
           "&:hover": {

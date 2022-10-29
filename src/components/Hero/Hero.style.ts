@@ -56,6 +56,10 @@ export const DownloadButton = styled(BaseButton, {
   marginBottom: "$16",
 });
 
+export const Version = styled("span", {
+  color: "$tealText",
+});
+
 export const AboutButton = styled(BaseButton, {
   marginBottom: "$64",
 });
