@@ -1,6 +1,5 @@
 import Features from "@components/Features";
 import Footer from "@components/Footer";
-import Hero from "@components/Hero";
 import globalStyles from "@styles/stitches.global";
 import * as Styled from "./App.style";
 
@@ -10,7 +9,7 @@ const App = () => {
     <Styled.Container>
       <Styled.Header />
       <main>
-        <Hero />
+        <Styled.Hero />
         <Features />
       </main>
       <Footer />

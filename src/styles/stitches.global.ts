@@ -9,6 +9,7 @@ const globalStyles = globalCss({
     textRendering: "optimizeSpeed",
     lineHeight: 1.5,
     fontFamily: "$redHatDisplay",
+    backgroundColor: "$white",
   },
   "a": { textDecoration: "none" },
   "img, picture, svg": { display: "block" },

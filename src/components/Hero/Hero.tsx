@@ -1,9 +1,13 @@
 import Step from "@components/Step";
 import * as Styled from "./Hero.style";
 
-const Hero = () => {
+interface Props {
+  className?: string;
+}
+
+const Hero = ({ className }: Props) => {
   return (
-    <Styled.Section>
+    <Styled.Section className={className}>
       <Styled.Placeholder>
         <Styled.Image />
       </Styled.Placeholder>
