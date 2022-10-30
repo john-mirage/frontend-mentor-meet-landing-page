@@ -37,6 +37,7 @@ export const { styled, css } = createStitches({
       white: "#FAFAFA",
     },
     space: {
+      minus28: pxToRem(-28),
       1: pxToRem(1),
       16: pxToRem(16),
       18: pxToRem(18),
@@ -46,6 +47,7 @@ export const { styled, css } = createStitches({
       28: pxToRem(28),
       30: pxToRem(30),
       32: pxToRem(32),
+      36: pxToRem(36),
       40: pxToRem(40),
       44: pxToRem(44),
       48: pxToRem(48),
@@ -60,6 +62,7 @@ export const { styled, css } = createStitches({
       340: pxToRem(340),
       414: pxToRem(414),
       456: pxToRem(456),
+      574: pxToRem(574),
     },
     fonts: {
       redHatDisplay: `Red Hat Display, ${FONT_SANS_FALLBACK}`,
