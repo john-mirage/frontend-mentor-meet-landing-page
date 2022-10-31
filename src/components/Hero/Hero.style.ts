@@ -18,8 +18,6 @@ export const Placeholder = styled(BasePlaceholder, {
 export const Image = styled(BaseImage, {
   width: "100%",
   height: "100%",
-  objectFit: "cover",
-  objectPosition: "center",
 });
 
 export const Container = styled("div", container, {
