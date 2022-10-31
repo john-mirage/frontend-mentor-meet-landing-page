@@ -25,11 +25,9 @@ const Placeholder = ({ className, background, children }: Props) => {
 
   const placeholderRef = useCallback((element: HTMLImageElement) => {
     if (element !== null) {
-      element.addEventListener(
-        "placeholder-foreground-loaded",
-        handleLoadedForeground,
-        { once: true }
-      );
+      element.addEventListener("image-loaded", handleLoadedForeground, {
+        once: true,
+      });
     }
   }, []);
 

@@ -1,5 +1,4 @@
-import BaseImage from "./BaseImage";
-import BasePicture from "./BasePicture";
+import * as Styled from "./BasePicture.style";
 
 interface Source {
   srcSet: string;
@@ -20,10 +19,10 @@ interface Image {
 }
 
 interface Props extends Image {
-  sources?: Source[];
+  sources: Source[];
 }
 
-const Image = ({
+const BasePicture = ({
   className,
   src,
   alt,
@@ -34,10 +33,17 @@ const Image = ({
   ariaHidden,
   sources,
 }: Props) => {
-  if (sources) {
-    return (
-      <BasePicture
-        className={className}
+  return (
+    <picture className={className}>
+      {sources.map((source) => (
+        <source
+          srcSet={source.srcSet}
+          media={source.media}
+          width={source.width}
+          height={source.height}
+        />
+      ))}
+      <Styled.Image
         src={src}
         alt={alt}
         width={width}
@@ -45,22 +51,9 @@ const Image = ({
         loading={loading}
         decoding={decoding}
         ariaHidden={ariaHidden}
-        sources={sources}
       />
-    );
-  }
-  return (
-    <BaseImage
-      className={className}
-      src={src}
-      alt={alt}
-      width={width}
-      height={height}
-      loading={loading}
-      decoding={decoding}
-      ariaHidden={ariaHidden}
-    />
+    </picture>
   );
 };
 
-export default Image;
+export default BasePicture;

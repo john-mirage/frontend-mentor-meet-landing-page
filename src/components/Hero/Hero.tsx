@@ -1,5 +1,6 @@
 import Step from "@components/Step";
 import * as Styled from "./Hero.style";
+import heroMobileImage from "@images/tablet/image-hero.png";
 
 interface Props {
   className?: string;
@@ -9,7 +10,15 @@ const Hero = ({ className }: Props) => {
   return (
     <Styled.Section className={className}>
       <Styled.Placeholder>
-        <Styled.Image />
+        <Styled.Image
+          src={heroMobileImage}
+          alt=""
+          width="820"
+          height="303"
+          loading="eager"
+          decoding="async"
+          ariaHidden="true"
+        />
       </Styled.Placeholder>
       <Styled.Container>
         <Styled.Title>Group Chat for Everyone</Styled.Title>
