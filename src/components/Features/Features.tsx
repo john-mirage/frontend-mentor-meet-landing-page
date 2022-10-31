@@ -3,7 +3,7 @@ import * as Styled from "./Features.style";
 
 const Features = () => {
   return (
-    <Styled.Section as="section">
+    <Styled.Container>
       <Styled.ImageGrid></Styled.ImageGrid>
       <Styled.Overline>Built for modern use</Styled.Overline>
       <Styled.Title>Smarter meetings, all in one place</Styled.Title>
@@ -13,7 +13,7 @@ const Features = () => {
         data encryption, and data export.
       </Styled.Subtitle>
       <Step stepNumber="02" />
-    </Styled.Section>
+    </Styled.Container>
   );
 };
 

@@ -1,5 +1,4 @@
 import * as Styled from "./Header.style";
-import { ScreenReaderOnly } from "@styles/stitches.components";
 import Logo from "@components/Logo";
 
 interface Props {
@@ -8,10 +7,10 @@ interface Props {
 
 const Header = ({ className }: Props) => {
   return (
-    <Styled.Container className={className}>
+    <Styled.Header className={className}>
       <Logo />
-      <ScreenReaderOnly as="h1">Meet landing page</ScreenReaderOnly>
-    </Styled.Container>
+      <Styled.Title>Meet landing page</Styled.Title>
+    </Styled.Header>
   );
 };
 

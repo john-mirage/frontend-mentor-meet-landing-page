@@ -1,8 +1,10 @@
 import { styled } from "@styles/stitches.config";
-import { Container } from "@styles/stitches.components";
+import { body, container, headline } from "@styles/stitches.mixins";
 
-export const Section = styled(Container, {
+export const Container = styled("section", container, {
   marginBottom: "$minus28",
+  position: "relative",
+  zIndex: 100,
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
@@ -26,20 +28,14 @@ export const Overline = styled("p", {
   color: "$teal",
 });
 
-export const Title = styled("h2", {
+export const Title = styled("h2", headline, {
   marginBottom: "$32",
   maxWidth: "$456",
-  fontSize: "$32",
-  lineHeight: "$36",
-  fontWeight: 900,
   color: "$darkGray",
 });
 
-export const Subtitle = styled("p", {
+export const Subtitle = styled("p", body, {
   marginBottom: "$64",
   maxWidth: "$574",
-  fontSize: "$16",
-  fontWeight: 500,
-  lineHeight: "$26",
   color: "$gray",
 });

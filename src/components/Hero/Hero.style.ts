@@ -1,8 +1,8 @@
 import BasePlaceholder from "@components/Placeholder";
 import BaseImage from "@components/Image";
 import BaseButton from "@components/Button";
-import { Container } from "@styles/stitches.components";
 import { styled } from "@styles/stitches.config";
+import { body, container } from "@styles/stitches.mixins";
 
 export const Section = styled("section", {
   textAlign: "center",
@@ -22,7 +22,7 @@ export const Image = styled(BaseImage, {
   objectPosition: "center",
 });
 
-export const Column = styled(Container, {
+export const Container = styled("div", container, {
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
@@ -37,12 +37,9 @@ export const Title = styled("h2", {
   color: "$darkGray",
 });
 
-export const Subtitle = styled("p", {
+export const Subtitle = styled("p", body, {
   marginBottom: "$32",
   maxWidth: "$456",
-  fontSize: "$16",
-  lineHeight: "$26",
-  fontWeight: 500,
   color: "$gray",
 });
 
@@ -54,10 +51,6 @@ export const ButtonGroup = styled("div", {
 
 export const DownloadButton = styled(BaseButton, {
   marginBottom: "$16",
-});
-
-export const Version = styled("span", {
-  color: "$tealText",
 });
 
 export const AboutButton = styled(BaseButton, {

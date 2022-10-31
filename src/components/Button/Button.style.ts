@@ -8,23 +8,35 @@ export const Button = styled("button", {
   color: "$white",
   transition: "background-color 150ms",
   variants: {
+    size: {
+      md: {
+        padding: "$16 $30",
+      },
+      lg: {
+        padding: "$16 $40",
+      },
+    },
     color: {
       teal: {
-        "padding": "$16 $40",
         "backgroundColor": "$teal",
         "@hover": {
           "&:hover": {
             backgroundColor: "$tealHover",
           },
         },
+        "& > span": {
+          color: "$tealText",
+        },
       },
       violet: {
-        "padding": "$16 $30",
         "backgroundColor": "$violet",
         "@hover": {
           "&:hover": {
             backgroundColor: "$violetHover",
           },
+        },
+        "& > span": {
+          color: "$violetText",
         },
       },
     },

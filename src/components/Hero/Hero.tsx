@@ -11,22 +11,22 @@ const Hero = ({ className }: Props) => {
       <Styled.Placeholder>
         <Styled.Image />
       </Styled.Placeholder>
-      <Styled.Column>
+      <Styled.Container>
         <Styled.Title>Group Chat for Everyone</Styled.Title>
         <Styled.Subtitle>
           Meet makes it easy to connect with others face-to-face virtually and
           collaborate across any device.
         </Styled.Subtitle>
         <Styled.ButtonGroup>
-          <Styled.DownloadButton type="button" color="teal">
-            Download <Styled.Version>v1.3</Styled.Version>
+          <Styled.DownloadButton type="button" size="lg" color="teal">
+            Download <span>v1.3</span>
           </Styled.DownloadButton>
-          <Styled.AboutButton type="button" color="violet">
+          <Styled.AboutButton type="button" size="md" color="violet">
             What is it?
           </Styled.AboutButton>
         </Styled.ButtonGroup>
         <Step stepNumber="01" />
-      </Styled.Column>
+      </Styled.Container>
     </Styled.Section>
   );
 };

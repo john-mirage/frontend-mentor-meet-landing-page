@@ -1,6 +1,6 @@
-import { styled } from "@styles/stitches.config";
+import { css } from "@styles/stitches.config";
 
-export const ScreenReaderOnly = styled("span", {
+export const screenReaderOnly = css({
   position: "absolute",
   width: "1px",
   height: "1px",
@@ -12,7 +12,7 @@ export const ScreenReaderOnly = styled("span", {
   borderWidth: 0,
 });
 
-export const Container = styled("div", {
+export const container = css({
   "width": "100%",
   "paddingX": "$24",
   "@sm": {
@@ -28,4 +28,16 @@ export const Container = styled("div", {
   "@xl": {
     maxWidth: "1200px",
   },
+});
+
+export const headline = css({
+  fontSize: "$32",
+  lineHeight: "$36",
+  fontWeight: 900,
+});
+
+export const body = css({
+  fontSize: "$16",
+  lineHeight: "$26",
+  fontWeight: 500,
 });
