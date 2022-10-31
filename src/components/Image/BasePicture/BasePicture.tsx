@@ -1,4 +1,4 @@
-import * as Styled from "./BasePicture.style";
+import BaseImage from "../BaseImage";
 
 interface Props extends image.BaseImage {
   sources: image.Source[];
@@ -19,13 +19,14 @@ const BasePicture = ({
     <picture className={className}>
       {sources.map((source) => (
         <source
+          key={source.srcSet}
           srcSet={source.srcSet}
           media={source.media}
           width={source.width}
           height={source.height}
         />
       ))}
-      <Styled.Image
+      <BaseImage
         src={src}
         alt={alt}
         width={width}

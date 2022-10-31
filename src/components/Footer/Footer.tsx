@@ -1,9 +1,30 @@
 import Button from "@components/Button";
 import * as Styled from "./Footer.style";
+import footerMobileImage from "@images/mobile/image-footer.jpg";
+import footerTabletImage from "@images/tablet/image-footer.jpg";
 
 const Footer = () => {
   return (
     <Styled.Footer>
+      <Styled.Placeholder>
+        <Styled.Image
+          src={footerMobileImage}
+          alt=""
+          width="750"
+          height="856"
+          loading="lazy"
+          decoding="async"
+          ariaHidden="true"
+          sources={[
+            {
+              srcSet: footerTabletImage,
+              media: "(min-width: 768px)",
+              width: "768",
+              height: "428",
+            },
+          ]}
+        />
+      </Styled.Placeholder>
       <Styled.Container>
         <Styled.Title>Experience more together</Styled.Title>
         <Styled.Subtitle>
