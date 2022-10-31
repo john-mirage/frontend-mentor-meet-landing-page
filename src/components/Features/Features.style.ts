@@ -1,4 +1,5 @@
 import { styled } from "@styles/stitches.config";
+import BasePlaceholder from "@components/Placeholder";
 import { body, container, headline } from "@styles/stitches.mixins";
 
 export const Container = styled("section", container, {
@@ -12,9 +13,17 @@ export const Container = styled("section", container, {
 });
 
 export const ImageGrid = styled("div", {
+  marginBottom: "$64",
   display: "grid",
   gridTemplateColumns: "repeat(2, 1fr)",
   gap: "$24",
+});
+
+export const Placeholder = styled(BasePlaceholder, {
+  width: "$151",
+  height: "$143",
+  borderRadius: "$8",
+  overflow: "hidden",
 });
 
 export const Overline = styled("p", {

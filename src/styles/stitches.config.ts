@@ -40,6 +40,7 @@ export const { styled, css } = createStitches({
     space: {
       minus28: pxToRem(-28),
       1: pxToRem(1),
+      8: pxToRem(8),
       16: pxToRem(16),
       18: pxToRem(18),
       24: pxToRem(24),
@@ -60,6 +61,8 @@ export const { styled, css } = createStitches({
       84: pxToRem(84),
       92: pxToRem(92),
       120: pxToRem(120),
+      143: pxToRem(143),
+      151: pxToRem(151),
       152: pxToRem(152),
       340: pxToRem(340),
       414: pxToRem(414),
