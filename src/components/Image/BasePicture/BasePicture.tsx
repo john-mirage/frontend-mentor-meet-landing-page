@@ -1,25 +1,7 @@
 import * as Styled from "./BasePicture.style";
 
-interface Source {
-  srcSet: string;
-  media: string;
-  width: string;
-  height: string;
-}
-
-interface Image {
-  className?: string;
-  src: string;
-  alt: string;
-  width: string;
-  height: string;
-  loading: "eager" | "lazy";
-  decoding: "async" | "auto" | "sync";
-  ariaHidden?: string;
-}
-
-interface Props extends Image {
-  sources: Source[];
+interface Props extends image.BaseImage {
+  sources: image.Source[];
 }
 
 const BasePicture = ({

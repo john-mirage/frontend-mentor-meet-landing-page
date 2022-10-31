@@ -1,17 +1,6 @@
 import { useCallback } from "react";
 import * as Styled from "./BaseImage.style";
 
-interface Props {
-  className?: string;
-  src: string;
-  alt: string;
-  width: string;
-  height: string;
-  loading: "eager" | "lazy";
-  decoding: "async" | "auto" | "sync";
-  ariaHidden?: string;
-}
-
 const BaseImage = ({
   className,
   src,
@@ -21,7 +10,7 @@ const BaseImage = ({
   loading,
   decoding,
   ariaHidden,
-}: Props) => {
+}: image.BaseImage) => {
   const imageRef = useCallback((element: HTMLImageElement) => {
     if (element !== null) {
       element.addEventListener(
