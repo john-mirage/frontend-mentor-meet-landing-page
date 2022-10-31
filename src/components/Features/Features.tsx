@@ -5,7 +5,6 @@ import womanInVideocallImage from "@images/desktop/image-woman-in-videocall.jpg"
 import womenVideochattingImage from "@images/desktop/image-women-videochatting.jpg";
 import menInMeetingImage from "@images/desktop/image-men-in-meeting.jpg";
 import manTextingImage from "@images/desktop/image-man-texting.jpg";
-import Placeholder from "@components/Placeholder";
 import Image from "@components/Image";
 
 const images = [

@@ -13,15 +13,19 @@ export const Container = styled("section", container, {
 });
 
 export const ImageGrid = styled("div", {
-  marginBottom: "$64",
-  display: "grid",
-  gridTemplateColumns: "repeat(2, 1fr)",
-  gap: "$24",
+  "marginBottom": "$64",
+  "display": "grid",
+  "gridTemplateColumns": "repeat(2, 1fr)",
+  "gap": "$24",
+  "width": "100%",
+  "@md": {
+    gridTemplateColumns: "repeat(4, 1fr)",
+  },
 });
 
 export const Placeholder = styled(BasePlaceholder, {
-  width: "$151",
-  height: "$143",
+  width: "100%",
+  paddingTop: "95%",
   borderRadius: "$8",
   overflow: "hidden",
 });
