@@ -7,7 +7,10 @@ export const Container = styled("div", {
 });
 
 export const Header = styled(BaseHeader, {
-  marginBottom: "$54",
+  "marginBottom": "$54",
+  "@md": {
+    marginBottom: "$64",
+  },
 });
 
 export const Hero = styled(BaseHero, {

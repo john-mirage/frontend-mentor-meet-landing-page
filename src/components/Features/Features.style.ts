@@ -19,7 +19,15 @@ export const ImageGrid = styled("div", {
   "gap": "$24",
   "width": "100%",
   "@md": {
+    marginBottom: "$48",
     gridTemplateColumns: "repeat(4, 1fr)",
+    gap: "$10",
+  },
+  "@lg": {
+    gap: "$30",
+  },
+  "@xl": {
+    marginBottom: "$80",
   },
 });
 
@@ -31,14 +39,17 @@ export const Placeholder = styled(BasePlaceholder, {
 });
 
 export const Overline = styled("p", {
-  marginBottom: "$24",
-  maxWidth: "$456",
-  fontSize: "$16",
-  lineHeight: "$26",
-  fontWeight: 900,
-  letterSpacing: "$4",
-  textTransform: "uppercase",
-  color: "$teal",
+  "marginBottom": "$24",
+  "maxWidth": "$456",
+  "fontSize": "$16",
+  "lineHeight": "$26",
+  "fontWeight": 900,
+  "letterSpacing": "$4",
+  "textTransform": "uppercase",
+  "color": "$teal",
+  "@md": {
+    marginBottom: "$16",
+  },
 });
 
 export const Title = styled("h2", headline, {
@@ -48,7 +59,14 @@ export const Title = styled("h2", headline, {
 });
 
 export const Subtitle = styled("p", body, {
-  marginBottom: "$64",
-  maxWidth: "$574",
-  color: "$gray",
+  "marginBottom": "$64",
+  "maxWidth": "$574",
+  "color": "$gray",
+  "@md": {
+    marginBottom: "$80",
+  },
+  "@xl": {
+    marginBottom: "$72",
+    maxWidth: "$540",
+  },
 });

@@ -21,23 +21,31 @@ export const container = css({
   },
   "@md": {
     maxWidth: "768px",
+    paddingX: "$40",
   },
   "@lg": {
     maxWidth: "992px",
   },
   "@xl": {
-    maxWidth: "1200px",
+    maxWidth: "1190px",
   },
 });
 
 export const headline = css({
-  fontSize: "$32",
-  lineHeight: "$36",
-  fontWeight: 900,
+  "fontSize": "$32",
+  "lineHeight": "$36",
+  "fontWeight": 900,
+  "@md": {
+    fontSize: "$40",
+    lineHeight: "$44",
+  },
 });
 
 export const body = css({
-  fontSize: "$16",
-  lineHeight: "$26",
-  fontWeight: 500,
+  "fontSize": "$16",
+  "lineHeight": "$26",
+  "fontWeight": 500,
+  "@lg": {
+    fontSize: "$18",
+  },
 });

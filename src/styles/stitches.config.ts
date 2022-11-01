@@ -14,7 +14,7 @@ const FONT_MONO_FALLBACK =
 const SCREEN_SM = "576px";
 const SCREEN_MD = "768px";
 const SCREEN_LG = "992px";
-const SCREEN_XL = "1200px";
+const SCREEN_XL = "1190px";
 
 const pxToRem = (sizeInPx: number) => {
   return `${String(sizeInPx / 16)}rem`;
@@ -41,6 +41,7 @@ export const { styled, css } = createStitches({
       minus28: pxToRem(-28),
       1: pxToRem(1),
       8: pxToRem(8),
+      10: pxToRem(10),
       16: pxToRem(16),
       18: pxToRem(18),
       24: pxToRem(24),
@@ -58,16 +59,27 @@ export const { styled, css } = createStitches({
       64: pxToRem(64),
       66: pxToRem(66),
       72: pxToRem(72),
+      80: pxToRem(80),
       84: pxToRem(84),
       92: pxToRem(92),
+      104: pxToRem(104),
+      116: pxToRem(116),
+      117: pxToRem(117),
       120: pxToRem(120),
+      125: pxToRem(125),
       143: pxToRem(143),
       151: pxToRem(151),
       152: pxToRem(152),
+      303: pxToRem(303),
       340: pxToRem(340),
+      350: pxToRem(350),
+      358: pxToRem(358),
       414: pxToRem(414),
       456: pxToRem(456),
+      540: pxToRem(540),
       574: pxToRem(574),
+      820: pxToRem(820),
+      1504: pxToRem(1504),
     },
     fonts: {
       redHatDisplay: `Red Hat Display, ${FONT_SANS_FALLBACK}`,

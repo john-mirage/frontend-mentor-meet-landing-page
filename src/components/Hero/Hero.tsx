@@ -1,6 +1,7 @@
 import Step from "@components/Step";
 import * as Styled from "./Hero.style";
 import heroMobileImage from "@images/tablet/image-hero.png";
+import heroDesktopImage from "@images/desktop/image-hero.png";
 
 interface Props {
   className?: string;
@@ -18,6 +19,14 @@ const Hero = ({ className }: Props) => {
           loading="eager"
           decoding="async"
           ariaHidden="true"
+          sources={[
+            {
+              srcSet: heroDesktopImage,
+              media: "(min-width: 1190px)",
+              width: "1504",
+              height: "358",
+            },
+          ]}
         />
       </Styled.Placeholder>
       <Styled.Container>

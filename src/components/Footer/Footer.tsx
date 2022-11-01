@@ -1,7 +1,7 @@
-import Button from "@components/Button";
 import * as Styled from "./Footer.style";
 import footerMobileImage from "@images/mobile/image-footer.jpg";
 import footerTabletImage from "@images/tablet/image-footer.jpg";
+import footerDekstopImage from "@images/desktop/image-footer.jpg";
 
 const Footer = () => {
   return (
@@ -17,6 +17,12 @@ const Footer = () => {
           ariaHidden="true"
           sources={[
             {
+              srcSet: footerDekstopImage,
+              media: "(min-width: 1190px)",
+              width: "1440",
+              height: "308",
+            },
+            {
               srcSet: footerTabletImage,
               media: "(min-width: 768px)",
               width: "768",
@@ -31,9 +37,9 @@ const Footer = () => {
           Stay connected with reliable HD meetings and unlimited one-on-one and
           group video sessions.
         </Styled.Subtitle>
-        <Button type="button" size="lg" color="violet">
+        <Styled.Button type="button" size="lg" color="violet">
           Download <span>v1.3</span>
-        </Button>
+        </Styled.Button>
       </Styled.Container>
     </Styled.Footer>
   );

@@ -36,7 +36,7 @@ const BaseImage = ({
       height={height}
       loading={loading}
       decoding={decoding}
-      aria-label={ariaHidden}
+      aria-hidden={ariaHidden}
       draggable="false"
     />
   );
