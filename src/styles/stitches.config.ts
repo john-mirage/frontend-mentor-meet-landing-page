@@ -11,6 +11,7 @@ const FONT_MONO_FALLBACK =
   "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace";
 */
 
+const SCREEN_XS = "375px";
 const SCREEN_SM = "576px";
 const SCREEN_MD = "768px";
 const SCREEN_LG = "992px";
@@ -93,6 +94,7 @@ export const { styled, css } = createStitches({
     },
   },
   media: {
+    xs: `(min-width: ${SCREEN_XS})`,
     sm: `(min-width: ${SCREEN_SM})`,
     md: `(min-width: ${SCREEN_MD})`,
     lg: `(min-width: ${SCREEN_LG})`,

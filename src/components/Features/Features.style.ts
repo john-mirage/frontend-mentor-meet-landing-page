@@ -16,8 +16,11 @@ export const ImageGrid = styled("div", {
   "marginBottom": "$64",
   "display": "grid",
   "gridTemplateColumns": "repeat(2, 1fr)",
-  "gap": "$24",
+  "gap": "$10",
   "width": "100%",
+  "@xs": {
+    gap: "$24",
+  },
   "@md": {
     marginBottom: "$48",
     gridTemplateColumns: "repeat(4, 1fr)",

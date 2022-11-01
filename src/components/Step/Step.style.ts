@@ -4,6 +4,7 @@ export const Container = styled("div", {
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
+  width: "$56",
 });
 
 export const Line = styled("div", {
