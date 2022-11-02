@@ -60,6 +60,14 @@ export const Title = styled("h2", {
     fontSize: "$48",
     lineHeight: "$48",
   },
+  "@lg": {
+    maxWidth: "$445",
+    fontSize: "$64",
+    lineHeight: "$64",
+  },
+  "@xl": {
+    marginBottom: "$34",
+  },
 });
 
 export const Subtitle = styled("p", body, {
