@@ -71,9 +71,12 @@ export const Title = styled("h2", {
 });
 
 export const Subtitle = styled("p", body, {
-  marginBottom: "$32",
-  maxWidth: "$456",
-  color: "$gray",
+  "marginBottom": "$32",
+  "maxWidth": "$456",
+  "color": "$gray",
+  "@xl": {
+    maxWidth: "$540",
+  },
 });
 
 export const ButtonGroup = styled("div", {
