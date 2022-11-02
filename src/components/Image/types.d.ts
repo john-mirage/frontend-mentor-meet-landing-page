@@ -14,7 +14,7 @@ namespace image {
     height: string;
     loading: "eager" | "lazy";
     decoding: "async" | "auto" | "sync";
-    ariaHidden?: string;
+    ariaHidden?: Booleanish | undefined;
   }
 
   interface BasePicture extends BaseImage {
